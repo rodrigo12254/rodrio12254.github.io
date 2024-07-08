@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <title>intento 2</title>
+    <link rel="stylesheet" href="estilos.css" />
+    
+</had>
+<body>
+    
+
+
+    <div id="container">
+
+        <header>
+         <h1>css con rodrigo aguilar</h1>
+        </header>
+
+        <div class="clearfix"></div>
+        
+        <section id="content">
+            
+
+           <article clas="article">
+                 <h2>encryptador de mensajes</h2>
+                 <p>encrypta y desencrypta tus mensajes aqui</p>
+          </article>
+          
+          <form id='form'>
+            <input type="text" id="bar-encrypta"  placeholder="escribe">
+            <button  onclick="cambio()" id="someter1">encryptar</button>           
+          </form>
+
+          <div>
+            <input type="text"  placeholder="desencrypta" id="bar-encrypta2">
+            <button onclick="cambio2()" type="submit" id="someter2"> decubrir </button>
+          </div>
+
+          <script>
+            const encryptar=document.querySelector('#form');
+            console.log(encryptar)
+
+           /* encryptar.addEventListener('click', (evento) => {
+                evento.preventDefault();
+                var curso = document.querySelector('#bar-encrypta').value;
+                console.log(curso);
+            })*/
+
+            /*if (curso == 100){
+            console.log('si') 
+            }*/
+
+            const enter = document.getElementById("bar-encrypta");
+
+            enter.addEventListener("keydown", function(event){
+            if(event.key === "Enter"){
+              prompt("ingresa un mensaje aqui")
+
+           document.getElementById("someter1").onclick = cambio();{
+
+            var codigo =  Math.random()*100000000000000000
+           document.getElementById('bar-encrypta').value = encryptado;
+           };
+           }
+           })
+             
+           var codigo =  Math.random()*100000000000000000
+           console.log(codigo)
+           var encryptado = prompt("ingresa un mensaje aqui")
+
+
+           function cambio(){
+            
+          }
+          
+
+            encryptar.addEventListener('submit', (evento) => {
+            evento.preventDefault();
+            var curso = document.querySelector('#bar-encrypta').value;
+            console.log(curso);
+            })
+
+
+            document.getElementById("someter2").onclick = cambio2();{
+              var encryptado2 = prompt("porfavor ingresa un valor aqui 2")
+            }
+           function cambio2(){
+            //var encryptado2 = prompt("porfavor ingresa un valor aqui 2")
+            }
+            //console.log("El valor ingresado por el usuario es: " + encrryptado);
+           // console.log("El valor ingresado por el usuario es: " + encryptado2);
+            
+
+            
+           if (encryptado2 == codigo)
+           console.log(encryptado)
+          else if(isNaN (codigo))
+          console.log('no')
+            
+           /*if(encryptado == encryptado2){
+           console.log('si') 
+           }else if(encryptado >= 100){
+            console.log('no')
+            }*/
+
+
+          </script>
+         
+        </section>
+
+        <div class="clearfix"></div>
+
+        <footer>
+            rodrigo aguilar WEB &copy; 2024
+        </footer>
+
+    </div>
+ <script src="encrypto.js"></script>
+</body>
+</html>
